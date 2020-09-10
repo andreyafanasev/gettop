@@ -14,6 +14,9 @@ class Page:
     def open_page(self, url=''):
         self.driver.get(self.base_url + url)
 
+    def open_product_page(self, url=''):
+        self.driver.get(self.base_url + url)
+
     def click(self, *locator):
         self.driver.find_element(*locator).click()
 
