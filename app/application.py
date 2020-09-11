@@ -14,6 +14,7 @@ from pages.out_of_stock_page import OutOfStock
 from pages.you_may_also_like_page import YouMayAlsoLike
 from pages.description_page import Description
 from pages.reviews_page import Review
+from pages.category_page import Category
 
 
 class Application:
@@ -36,3 +37,4 @@ class Application:
         self.you = YouMayAlsoLike(self.driver)
         self.des = Description(self.driver)
         self.review = Review(self.driver)
+        self.cat = Category(self.driver)
