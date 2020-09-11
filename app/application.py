@@ -15,6 +15,10 @@ from pages.you_may_also_like_page import YouMayAlsoLike
 from pages.description_page import Description
 from pages.reviews_page import Review
 from pages.category_page import Category
+from pages.recently_viewed_page import RecentlyViewed
+from pages.browse_page import Browse
+from pages.sorting_page import Sorting
+from pages.filter_page import Filter
 
 
 class Application:
@@ -38,3 +42,7 @@ class Application:
         self.des = Description(self.driver)
         self.review = Review(self.driver)
         self.cat = Category(self.driver)
+        self.recently = RecentlyViewed(self.driver)
+        self.browse = Browse(self.driver)
+        self.sorting = Sorting(self.driver)
+        self.filter = Filter(self.driver)
